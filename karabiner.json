@@ -960,7 +960,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/System/Volumes/Data/Applications/Arc.app'"
+                                        "shell_command": "open '/System/Volumes/Data/Applications/Brave Browser.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1265,7 +1265,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/bin/bash -c 'export PATH=\"/opt/homebrew/bin:$PATH\" && arc-cli new-tab \"https://www.youtube.com/\"'"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.youtube.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1282,7 +1282,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/bin/bash -c 'export PATH=\"/opt/homebrew/bin:$PATH\" && arc-cli new-tab \"https://roadmap.sh/\"'"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://roadmap.sh/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1299,7 +1299,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/bin/bash -c 'export PATH=\"/opt/homebrew/bin:$PATH\" && arc-cli new-tab \"https://libgen.is/\"'"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://libgen.is/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1316,7 +1316,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/bin/bash -c 'export PATH=\"/opt/homebrew/bin:$PATH\" && arc-cli new-tab \"https://www.mytcas.com/\"'"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.mytcas.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1333,7 +1333,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/bin/bash -c 'export PATH=\"/opt/homebrew/bin:$PATH\" && arc-cli new-tab \"https://chat.openai.com/\"'"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://chat.openai.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1350,7 +1350,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/bin/bash -c 'export PATH=\"/opt/homebrew/bin:$PATH\" && arc-cli new-tab \"https://www.github.com\"'"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.github.com"
                                     }
                                 ],
                                 "type": "basic"
@@ -1367,7 +1367,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/bin/bash -c 'export PATH=\"/opt/homebrew/bin:$PATH\" && arc-cli new-tab \"https://drive.google.com/drive/u/0/my-drive\"'"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://drive.google.com/drive/u/0/my-drive"
                                     }
                                 ],
                                 "type": "basic"
@@ -1384,7 +1384,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/bin/bash -c 'export PATH=\"/opt/homebrew/bin:$PATH\" && arc-cli new-tab \"https://www.netflix.com/browse\"'"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.netflix.com/browse"
                                     }
                                 ],
                                 "type": "basic"
@@ -1401,7 +1401,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/bin/bash -c 'export PATH=\"/opt/homebrew/bin:$PATH\" && arc-cli new-tab \"https://www.bilibili.tv/th\"'"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.bilibili.tv/th"
                                     }
                                 ],
                                 "type": "basic"
