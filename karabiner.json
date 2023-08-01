@@ -1,4 +1,4 @@
-{
+ {
     "global": {
         "ask_for_confirmation_before_quitting": true,
         "check_for_updates_on_startup": true,
@@ -20,54 +20,6 @@
                     {
                         "description": "Fn+j/k/l; as Vim arrows and Fn+a/s/d as ⇧/⌥/⌘",
                         "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "simple_vi_mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "backslash"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_forward"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "backslash",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "simple_vi_mode",
-                                            "value": 1
-                                        }
-                                    },
-                                    {
-                                        "key_code": "delete_forward"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "set_variable": {
-                                            "name": "simple_vi_mode",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
                             {
                                 "conditions": [
                                     {
@@ -868,69 +820,6 @@
                         ]
                     },
                     {
-                        "description": "Forward delete (1/word/row)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "backslash"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_forward",
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "backslash",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_option"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_forward",
-                                        "modifiers": [
-                                            "left_option"
-                                        ],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "backslash",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "k",
-                                        "modifiers": [
-                                            "left_control"
-                                        ],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Launch apps by right command+letters.",
                         "manipulators": [
                             {
@@ -1316,7 +1205,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.mytcas.com/"
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://twitter.com/home"
                                     }
                                 ],
                                 "type": "basic"
@@ -1577,10 +1466,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "3",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "p",
                                         "repeat": true
                                     }
                                 ],
@@ -1604,7 +1490,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "2",
+                                        "key_code": "p",
                                         "modifiers": [
                                             "left_shift"
                                         ],
@@ -1631,7 +1517,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "quote",
+                                        "key_code": "open_bracket",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ],
                                         "repeat": true
                                     }
                                 ],
@@ -1655,7 +1544,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "quote",
+                                        "key_code": "close_bracket",
                                         "modifiers": [
                                             "left_shift"
                                         ],
@@ -1728,10 +1617,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "open_bracket",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "7",
                                         "repeat": true
                                     }
                                 ],
@@ -1750,10 +1636,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "close_bracket",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "8",
                                         "repeat": true
                                     }
                                 ],
@@ -1772,10 +1655,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "comma",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "9",
                                         "repeat": true
                                     }
                                 ],
@@ -1790,120 +1670,11 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "p",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "key_code": "p"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "period",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "caps_lock pressed",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "open_bracket"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "1",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "caps_lock pressed",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "open_bracket",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "7",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "caps_lock pressed",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "close_bracket"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "slash",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "caps_lock pressed",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "close_bracket",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "backslash",
+                                        "key_code": "5",
                                         "modifiers": [
                                             "left_shift"
                                         ],
@@ -1957,7 +1728,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "slash",
+                                        "key_code": "grave_accent_and_tilde",
                                         "modifiers": [
                                             "left_shift"
                                         ],
@@ -1984,7 +1755,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "comma",
+                                        "key_code": "9",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ],
                                         "repeat": true
                                     }
                                 ],
@@ -2008,7 +1782,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "period",
+                                        "key_code": "0",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ],
                                         "repeat": true
                                     }
                                 ],
@@ -2081,10 +1858,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "9",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "4",
                                         "repeat": true
                                     }
                                 ],
@@ -2103,10 +1877,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "0",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "5",
                                         "repeat": true
                                     }
                                 ],
@@ -2125,10 +1896,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "6",
                                         "repeat": true
                                     }
                                 ],
@@ -2257,7 +2025,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "p",
+                                        "key_code": "open_bracket",
                                         "repeat": true
                                     }
                                 ],
@@ -2281,10 +2049,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "p",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "close_bracket",
                                         "repeat": true
                                     }
                                 ],
@@ -2353,7 +2118,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "open_bracket",
+                                        "key_code": "1",
                                         "repeat": true
                                     }
                                 ],
@@ -2372,7 +2137,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "close_bracket",
+                                        "key_code": "2",
                                         "repeat": true
                                     }
                                 ],
@@ -2391,10 +2156,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "5",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "3",
                                         "repeat": true
                                     }
                                 ],
@@ -2437,7 +2199,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "spacebar",
+                                        "key_code": "0",
                                         "repeat": true
                                     }
                                 ],
@@ -2736,6 +2498,152 @@
                                 "to": [
                                     {
                                         "key_code": "f6",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift-Delete to Delete-Forward (deletes next character, use both shift keys to bypass)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "right_shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ],
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_forward",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Option-Shift-Delete to Option-Delete-Forward (deletes next word, use both shift keys to bypass)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "right_shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ],
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift",
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_forward",
+                                        "modifiers": [
+                                            "left_option"
+                                        ],
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Command-Shift-Delete to Ctrl-K (deletes rest of line, use both shift keys to bypass)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "right_shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ],
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift",
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "n",
+                                        "modifiers": [
+                                            "left_control"
+                                        ],
                                         "repeat": true
                                     }
                                 ],
