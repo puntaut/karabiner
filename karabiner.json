@@ -3324,7 +3324,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "q"
+                                        "key_code": "quote"
                                     }
                                 ],
                                 "type": "basic"
@@ -3844,7 +3844,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "quote"
+                                        "key_code": "j"
                                     }
                                 ],
                                 "type": "basic"
@@ -3922,7 +3922,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "j"
+                                        "key_code": "q"
                                     }
                                 ],
                                 "type": "basic"
@@ -4695,7 +4695,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "q",
+                                        "key_code": "quote",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -5375,7 +5375,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "quote",
+                                        "key_code": "j",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -5477,7 +5477,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "j",
+                                        "key_code": "q",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -6293,7 +6293,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "q",
+                                        "key_code": "quote",
                                         "modifiers": [
                                             "right_shift"
                                         ]
@@ -6973,7 +6973,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "quote",
+                                        "key_code": "j",
                                         "modifiers": [
                                             "right_shift"
                                         ]
@@ -7075,7 +7075,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "j",
+                                        "key_code": "q",
                                         "modifiers": [
                                             "right_shift"
                                         ]
