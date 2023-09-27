@@ -1382,6 +1382,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1406,6 +1414,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1425,6 +1441,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1444,6 +1468,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1482,6 +1514,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1501,6 +1541,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1520,6 +1568,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1539,6 +1595,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1558,6 +1622,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1577,6 +1649,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1596,6 +1676,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1615,6 +1703,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1637,6 +1733,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1659,6 +1763,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1681,6 +1793,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1703,6 +1823,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1725,6 +1853,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1744,6 +1880,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1768,6 +1912,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1792,6 +1944,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1816,6 +1976,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1840,6 +2008,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1864,6 +2040,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1886,6 +2070,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1905,6 +2097,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1924,6 +2124,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1946,6 +2154,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1968,6 +2184,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1990,6 +2214,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -2011,6 +2243,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -2033,6 +2273,14 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -2055,29 +2303,18 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
                                     "key_code": "period"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "semicolon",
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "caps_lock pressed",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "slash"
                                 },
                                 "to": [
                                     {
@@ -2096,6 +2333,41 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "slash"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "semicolon",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "caps_lock pressed",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    },
+                                    {
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
+                                            }
+                                        ],
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -4227,10 +4499,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "quote",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
+                                        "key_code": "backslash"
                                     }
                                 ],
                                 "type": "basic"
@@ -5822,10 +6091,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "quote",
-                                        "modifiers": [
-                                            "right_shift"
-                                        ]
+                                        "key_code": "backslash"
                                     }
                                 ],
                                 "type": "basic"
