@@ -1089,7 +1089,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/System/Volumes/Data/Applications/kitty.app' --args 'nvim' "
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/neovide.app' --args -- -c 'cd /Users/punt/' "
                                     }
                                 ],
                                 "type": "basic"
@@ -1869,6 +1869,9 @@
                                 "to": [
                                     {
                                         "key_code": "hyphen",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ],
                                         "repeat": true
                                     }
                                 ],
@@ -1880,14 +1883,6 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
-                                    },
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1912,14 +1907,6 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
-                                    },
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1944,14 +1931,6 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
-                                    },
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -1976,14 +1955,6 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
-                                    },
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -2008,14 +1979,6 @@
                                         "name": "caps_lock pressed",
                                         "type": "variable_if",
                                         "value": 1
-                                    },
-                                    {
-                                        "input_sources": [
-                                            {
-                                                "input_source_id": "^com\\.apple\\.keylayout\\.ABC$"
-                                            }
-                                        ],
-                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
@@ -2229,10 +2192,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "hyphen",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
+                                        "key_code": "hyphen"
                                     }
                                 ],
                                 "type": "basic"
@@ -2385,31 +2345,6 @@
                     },
                     {
                         "description": "Change Eject button to Lockscreen",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f",
-                                        "modifiers": [
-                                            "fn"
-                                        ],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Fn+e to Fn+f",
                         "manipulators": [
                             {
                                 "from": {
