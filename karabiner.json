@@ -1062,14 +1062,62 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/Applications/Discord.app'"
+                                        "shell_command": "open '/System/Volumes/Data/Applications/Discord.app'"
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
-                                    "key_code": "c",
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Volumes/Data/Applications/qbittorrent.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/Applications/element.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "i",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Volumes/Data/Applications/UTM.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "x",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
@@ -1101,7 +1149,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "x",
+                                    "key_code": "c",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
@@ -1229,6 +1277,22 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open /Applications/LINE.app"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "w",
                                     "modifiers": {
                                         "mandatory": [
@@ -1238,7 +1302,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/Applications/LINE.app'"
+                                        "shell_command": "osascript -e 'tell application \"LINE\" to activate'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1334,7 +1398,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/neovide.app' --args -- -c 'cd /Users/punt/.config/nvim/' "
+                                        "shell_command": "open -a '/System/Volumes/Data/Applications/kitty.app' --args '/opt/homebrew/bin/nvim' "
                                     }
                                 ],
                                 "type": "basic"
@@ -1351,7 +1415,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.youtube.com/"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.youtube.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1368,7 +1432,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://roadmap.sh/"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://roadmap.sh/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1385,7 +1449,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://libgen.is/"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://libgen.is/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1402,7 +1466,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://twitter.com/home"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://twitter.com/home"
                                     }
                                 ],
                                 "type": "basic"
@@ -1419,7 +1483,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://chat.openai.com/"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://chat.openai.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1436,7 +1500,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.github.com"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://mail.google.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1453,7 +1517,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.typeracer.com/"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.typeracer.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1470,7 +1534,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://monkeytype.com"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://monkeytype.com"
                                     }
                                 ],
                                 "type": "basic"
@@ -1487,7 +1551,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://drive.google.com/drive/u/0/my-drive"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://drive.google.com/drive/u/0/my-drive"
                                     }
                                 ],
                                 "type": "basic"
@@ -1504,7 +1568,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.netflix.com/browse"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.netflix.com/browse"
                                     }
                                 ],
                                 "type": "basic"
@@ -1521,7 +1585,24 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/System/Volumes/Data/Applications/Brave Browser.app' https://www.bilibili.tv/th"
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.bilibili.tv/th"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.facebook.com"
                                     }
                                 ],
                                 "type": "basic"
