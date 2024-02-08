@@ -1085,7 +1085,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "m",
+                                    "key_code": "h",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
@@ -1422,6 +1422,23 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Firefox.app' https://ranelpadon.github.io/ngram-type/"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "s",
                                     "modifiers": {
                                         "mandatory": [
@@ -1473,7 +1490,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "h",
+                                    "key_code": "m",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
@@ -1490,7 +1507,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "m",
+                                    "key_code": "h",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
@@ -3756,7 +3773,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "c"
+                                        "key_code": "g"
                                     }
                                 ],
                                 "type": "basic"
@@ -4068,7 +4085,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "g"
+                                        "key_code": "c"
                                     }
                                 ],
                                 "type": "basic"
@@ -5231,7 +5248,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "c",
+                                        "key_code": "g",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -5639,7 +5656,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "g",
+                                        "key_code": "c",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -6823,7 +6840,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "c",
+                                        "key_code": "g",
                                         "modifiers": [
                                             "right_shift"
                                         ]
@@ -7231,7 +7248,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "g",
+                                        "key_code": "c",
                                         "modifiers": [
                                             "right_shift"
                                         ]
