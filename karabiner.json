@@ -3903,7 +3903,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "comma"
+                                        "key_code": "quote",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -4111,10 +4114,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "quote",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
+                                        "key_code": "comma"
                                     }
                                 ],
                                 "type": "basic"
