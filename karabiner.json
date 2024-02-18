@@ -2123,7 +2123,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "grave_accent_and_tilde",
+                                        "key_code": "5",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ],
                                         "repeat": true
                                     }
                                 ],
@@ -2240,10 +2243,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "5",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ],
+                                        "key_code": "grave_accent_and_tilde",
                                         "repeat": true
                                     }
                                 ],
