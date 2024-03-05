@@ -2931,32 +2931,6 @@
                                     {
                                         "set_variable": {
                                             "name": "qwerty_sublayer",
-                                            "value": 2
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "qwerty_sublayer",
-                                        "type": "variable_if",
-                                        "value": 2
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "qwerty_sublayer",
                                             "value": 0
                                         }
                                     }
