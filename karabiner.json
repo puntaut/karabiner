@@ -8217,7 +8217,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "y"
+                                        "key_code": "k"
                                     }
                                 ],
                                 "type": "basic"
@@ -8529,7 +8529,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "k"
+                                        "key_code": "y"
                                     }
                                 ],
                                 "type": "basic"
@@ -9695,7 +9695,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "y",
+                                        "key_code": "k",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -10100,7 +10100,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "k",
+                                        "key_code": "y",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -11290,7 +11290,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "y",
+                                        "key_code": "k",
                                         "modifiers": [
                                             "right_shift"
                                         ]
@@ -11695,7 +11695,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "k",
+                                        "key_code": "y",
                                         "modifiers": [
                                             "right_shift"
                                         ]
