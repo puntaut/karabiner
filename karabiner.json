@@ -1078,7 +1078,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/System/Volumes/Data/Applications/Brave Browser.app'"
+                                        "shell_command": "open '/Applications/firefox.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1094,7 +1094,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/Applications/Firefox.app'"
+                                        "shell_command": "open '/Applications/Brave Browser.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1309,7 +1309,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "m",
+                                    "key_code": "h",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
@@ -1319,7 +1319,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.youtube.com/"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' 'https://www.youtube.com/'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1336,7 +1336,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://ranelpadon.github.io/ngram-type/"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://ranelpadon.github.io/ngram-type/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1353,7 +1353,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://libgen.is/"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://libgen.is/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1370,7 +1370,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://twitter.com/home"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://twitter.com/home"
                                     }
                                 ],
                                 "type": "basic"
@@ -1387,7 +1387,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://chat.openai.com/"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://chat.openai.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1404,7 +1404,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://mail.google.com/"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://mail.google.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1421,7 +1421,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.typeracer.com/"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://www.typeracer.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1438,14 +1438,14 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://monkeytype.com"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://monkeytype.com"
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
-                                    "key_code": "h",
+                                    "key_code": "m",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
@@ -1455,7 +1455,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.keybr.com/"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://www.keybr.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1472,7 +1472,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://drive.google.com/drive/u/0/my-drive"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://drive.google.com/drive/u/0/my-drive"
                                     }
                                 ],
                                 "type": "basic"
@@ -1489,7 +1489,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.bilibili.tv/th"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://www.bilibili.tv/th"
                                     }
                                 ],
                                 "type": "basic"
@@ -1506,7 +1506,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Firefox.app' https://www.facebook.com"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://www.facebook.com"
                                     }
                                 ],
                                 "type": "basic"
