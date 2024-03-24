@@ -1078,7 +1078,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/Applications/firefox.app'"
+                                        "shell_command": "open '/Applications/Google Chrome.app'"
                                     }
                                 ],
                                 "type": "basic"
