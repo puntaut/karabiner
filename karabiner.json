@@ -90,7 +90,112 @@
                                     }
                                 ],
                                 "from": {
+                                    "key_code": "1"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(1920,180) degree:0'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "1",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "simple_vi_mode",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(1920,180) degree:0'"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "simple_vi_mode",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "simple_vi_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(1440,-180) degree:0'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "simple_vi_mode",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(1440,-180) degree:0'"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "simple_vi_mode",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "simple_vi_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "2",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -105,14 +210,29 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "name": "simple_vi_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
                                 "from": {
-                                    "key_code": "1",
+                                    "key_code": "2"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(-1440,180) degree:0'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "2",
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
@@ -148,14 +268,14 @@
                                 "from": {
                                     "key_code": "2",
                                     "modifiers": {
-                                        "optional": [
-                                            "any"
+                                        "mandatory": [
+                                            "left_control"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(1920,180) degree:0'"
+                                        "shell_command": "/opt/homebrew/bin/displayplacer  'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-1920,-180) degree:0'"
                                     }
                                 ],
                                 "type": "basic"
@@ -165,7 +285,8 @@
                                     "key_code": "2",
                                     "modifiers": {
                                         "mandatory": [
-                                            "fn"
+                                            "fn",
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "any"
@@ -180,7 +301,55 @@
                                         }
                                     },
                                     {
-                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(1920,180) degree:0'"
+                                        "shell_command": "/opt/homebrew/bin/displayplacer  'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-1920,-180) degree:0'"
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "simple_vi_mode",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "simple_vi_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "3"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB+37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "3",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "simple_vi_mode",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB+37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0'"
                                     }
                                 ],
                                 "to_after_key_up": [
@@ -204,14 +373,14 @@
                                 "from": {
                                     "key_code": "3",
                                     "modifiers": {
-                                        "optional": [
-                                            "any"
+                                        "mandatory": [
+                                            "left_control"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-1920,-243) degree:0'"
+                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230+17A298E7-A980-4409-0857-D6964E3302DB res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0'"
                                     }
                                 ],
                                 "type": "basic"
@@ -221,7 +390,8 @@
                                     "key_code": "3",
                                     "modifiers": {
                                         "mandatory": [
-                                            "fn"
+                                            "fn",
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "any"
@@ -236,63 +406,7 @@
                                         }
                                     },
                                     {
-                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-1920,-243) degree:0'"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "set_variable": {
-                                            "name": "simple_vi_mode",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "simple_vi_mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "4",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB+37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0'"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "4",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "simple_vi_mode",
-                                            "value": 1
-                                        }
-                                    },
-                                    {
-                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB+37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0'"
+                                        "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230+17A298E7-A980-4409-0857-D6964E3302DB res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0'"
                                     }
                                 ],
                                 "to_after_key_up": [
@@ -829,6 +943,22 @@
                         "manipulators": [
                             {
                                 "from": {
+                                    "key_code": "0",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "/usr/sbin/networksetup -setairportnetwork en0 roongsak xaeedpuntpont"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "hyphen",
                                     "modifiers": {
                                         "mandatory": [
@@ -1067,7 +1197,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -b com.riotgames.RiotGames.RiotClientUx && open '/Applications/League of Legends.app/Contents/LoL/LeagueClient.app/'"
+                                        "shell_command": "open -b com.riotgames.RiotGames.RiotClient && open '/Applications/League of Legends.app/Contents/LoL/LeagueClient.app/'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1224,6 +1354,23 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://github.com/plsnogarlic?tab=stars"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "s",
                                     "modifiers": {
                                         "mandatory": [
@@ -1251,7 +1398,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://monkeytype.com"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://www.monkeytype.com/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1326,6 +1473,23 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://www.instagram.com"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "d",
                                     "modifiers": {
                                         "mandatory": [
@@ -1385,10 +1549,10 @@
                             {
                                 "conditions": [
                                     {
-                                        "type": "frontmost_application_unless",
                                         "bundle_identifiers": [
                                             "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
-                                        ]
+                                        ],
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -1425,10 +1589,10 @@
                             {
                                 "conditions": [
                                     {
-                                        "type": "frontmost_application_if",
                                         "bundle_identifiers": [
                                             "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
-                                        ]
+                                        ],
+                                        "type": "frontmost_application_if"
                                     }
                                 ],
                                 "from": {
@@ -7066,7 +7230,9 @@
                 {
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": true,
                         "is_pointing_device": false,
                         "product_id": 641,
@@ -7074,13 +7240,21 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": false,
                         "is_pointing_device": true,
                         "product_id": 641,
@@ -7088,13 +7262,21 @@
                     },
                     "ignore": true,
                     "manipulate_caps_lock_led": false,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": true,
                         "is_pointing_device": false,
                         "product_id": 4160,
@@ -7102,13 +7284,21 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": false,
                         "is_pointing_device": true,
                         "product_id": 4160,
@@ -7116,13 +7306,21 @@
                     },
                     "ignore": true,
                     "manipulate_caps_lock_led": false,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": true,
                         "is_pointing_device": true,
                         "product_id": 384,
@@ -7130,13 +7328,21 @@
                     },
                     "ignore": true,
                     "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": true,
                         "is_pointing_device": false,
                         "product_id": 384,
@@ -7144,6 +7350,12 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
                     "simple_modifications": [
                         {
                             "from": {
@@ -7201,7 +7413,9 @@
                 {
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": true,
                         "is_pointing_device": false,
                         "product_id": 615,
@@ -7209,6 +7423,12 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
                     "simple_modifications": [
                         {
                             "from": {
@@ -7326,7 +7546,9 @@
                 {
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": true,
                         "is_pointing_device": false,
                         "product_id": 615,
@@ -7334,6 +7556,12 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
                     "simple_modifications": [
                         {
                             "from": {
@@ -7571,7 +7799,7 @@
                     ]
                 }
             ],
-            "name": "lookpedkeele",
+            "name": "Default",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
