@@ -538,7 +538,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "m",
+                                    "key_code": "u",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -554,7 +554,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "m",
+                                    "key_code": "u",
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
@@ -594,7 +594,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "comma",
+                                    "key_code": "i",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -610,7 +610,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "comma",
+                                    "key_code": "i",
                                     "modifiers": {
                                         "mandatory": [
                                             "fn"
@@ -1100,6 +1100,14 @@
                         "description": "Launch apps by right command+letters.",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/System/Volumes/Data/Applications/Discord.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "e",
                                     "modifiers": {
@@ -1116,6 +1124,41 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "file_paths": [
+                                            "/System/Volumes/Data/Applications/Discord.app"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/Applications/Google Chrome.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "v",
                                     "modifiers": {
@@ -1132,6 +1175,41 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "file_paths": [
+                                            "/Applications/Google Chrome.app"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "v",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/Applications/Brave Browser.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "f",
                                     "modifiers": {
@@ -1148,6 +1226,33 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "file_paths": [
+                                            "/Applications/Brave Browser.app"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
                                 "from": {
                                     "key_code": "n",
                                     "modifiers": {
@@ -1158,7 +1263,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/System/Volumes/Data/Applications/Adobe Photoshop 2022/Adobe Photoshop 2022.app'"
+                                        "shell_command": "open '/System/Volumes/Data/Applications/Adobe Photoshop 2024/Adobe Photoshop 2024.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1180,6 +1285,14 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/System/Volumes/Data/Applications/kitty.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "quote",
                                     "modifiers": {
@@ -1196,6 +1309,14 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/System/Library/CoreServices/Finder.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "u",
                                     "modifiers": {
@@ -1212,6 +1333,41 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "file_paths": [
+                                            "/System/Library/CoreServices/Finder.app"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/System/Applications/Music.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "c",
                                     "modifiers": {
@@ -1228,6 +1384,41 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "file_paths": [
+                                            "/System/Applications/Music.app"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/System/Applications/System Settings.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "comma",
                                     "modifiers": {
@@ -1244,8 +1435,16 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "file_paths": [
+                                            "/System/Applications/System Settings.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "comma",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command"
@@ -1254,12 +1453,94 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open /Applications/LINE.app"
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/System/Volumes/Data/Applications/qbittorrent.app"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open /System/Volumes/Data/Applications/qbittorrent.app"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "file_paths": [
+                                            "/System/Volumes/Data/Applications/qbittorrent.app"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "bundle_identifiers": [
+                                            "jp\\.naver\\.line\\.mac"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "w",
                                     "modifiers": {
@@ -1271,6 +1552,33 @@
                                 "to": [
                                     {
                                         "shell_command": "osascript -e 'tell application \"LINE\" to activate'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "jp\\.naver\\.line\\.mac"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -1308,6 +1616,14 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "bundle_identifiers": [
+                                            "com\\.riotgames\\.LeagueofLegends\\.LeagueClientUx"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "1",
                                     "modifiers": {
@@ -1319,6 +1635,33 @@
                                 "to": [
                                     {
                                         "shell_command": "open '/Applications/League of Legends.app/Contents/LoL/League Of Legends.app/'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "bundle_identifiers": [
+                                            "com\\.riotgames\\.LeagueofLegends\\.LeagueClientUx"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -1340,6 +1683,14 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/System/Volumes/Data/Applications/kitty.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "a",
                                     "modifiers": {
@@ -1351,6 +1702,23 @@
                                 "to": [
                                     {
                                         "shell_command": "open -a '/System/Volumes/Data/Applications/kitty.app' --args '/opt/homebrew/bin/nvim' "
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' 'https://hub.atk.pro/'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1384,7 +1752,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://ranelpadon.github.io/ngram-type/"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://www.netflix.com/browse"
                                     }
                                 ],
                                 "type": "basic"
@@ -1544,7 +1912,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "q",
+                                    "key_code": "b",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
@@ -1554,7 +1922,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://www.bilibili.tv/th"
+                                        "shell_command": "open -a '/Applications/Brave Browser.app' https://bitsearch.to/"
                                     }
                                 ],
                                 "type": "basic"
@@ -1594,6 +1962,14 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_unless",
+                                        "file_paths": [
+                                            "/System/Volumes/Data/Applications/kitty.app"
+                                        ]
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "d",
                                     "modifiers": {
@@ -1605,6 +1981,33 @@
                                 "to": [
                                     {
                                         "shell_command": "open -a /System/Volumes/Data/Applications/kitty.app"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "frontmost_application_if",
+                                        "file_paths": [
+                                            "/System/Volumes/Data/Applications/kitty.app"
+                                        ]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -1701,7 +2104,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "caps_lock",
+                                    "key_code": "left_command",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -1711,6 +2114,41 @@
                                 "to": [
                                     {
                                         "key_code": "left_option"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "caps_lock pressed",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "caps_lock pressed",
+                                            "value": 0
+                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -7759,6 +8197,50 @@
                         }
                     ],
                     "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 62858,
+                        "vendor_id": 13652
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "game_pad_swap_sticks": false,
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": false,
+                        "is_pointing_device": true,
+                        "product_id": 62858,
+                        "vendor_id": 13652
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false,
+                    "mouse_flip_horizontal_wheel": false,
+                    "mouse_flip_vertical_wheel": false,
+                    "mouse_flip_x": false,
+                    "mouse_flip_y": false,
+                    "mouse_swap_wheels": false,
+                    "mouse_swap_xy": false,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
                 }
             ],
             "fn_function_keys": [
@@ -7891,7 +8373,7 @@
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
-                "indicate_sticky_modifier_keys_state": true,
+                "indicate_sticky_modifier_keys_state": false,
                 "mouse_key_xy_scale": 100
             }
         }
