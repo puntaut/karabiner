@@ -15,6 +15,28 @@
                 },
                 "rules": [
                     {
+                        "description": "Command + Capslock (ChangeWindowFocus)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "mandatory": ["left_command"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "FnPressedMode",
                         "manipulators": [
                             {
@@ -45,7 +67,7 @@
                         ]
                     },
                     {
-                        "description": "Fn + q/w/e/r to change monitor settings",
+                        "description": "Fn + q/w/e/r (ChangeDisplayArrangement)",
                         "manipulators": [
                             {
                                 "description": "ExternalDisplay(Left)-main",
@@ -293,53 +315,7 @@
                         ]
                     },
                     {
-                        "description": "Delete_or_backspace in Fn+... mode",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": { "mandatory": ["fn"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": { "mandatory": ["fn", "left_option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": ["left_option"],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": { "mandatory": ["fn", "left_command"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": ["left_command"],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Wifi Connections",
+                        "description": "RightCommand + 0,-,= (ChangeWifiConnections)",
                         "manipulators": [
                             {
                                 "from": {
@@ -368,7 +344,7 @@
                         ]
                     },
                     {
-                        "description": "Launch apps by right command+letters.",
+                        "description": "RightCommand + Letters (LaunchApplication)",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1096,7 +1072,7 @@
                         ]
                     },
                     {
-                        "description": "Capslock + key to extend symbol layer",
+                        "description": "Capslock + Key (SymbolLayer)",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1837,119 +1813,12 @@
                         ]
                     },
                     {
-                        "description": "Shift-Delete to Delete-Forward (deletes next character, use both shift keys to bypass)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": ["left_shift", "right_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": ["left_shift"],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": { "mandatory": ["shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_forward",
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Option-Shift-Delete to Option-Delete-Forward (deletes next word, use both shift keys to bypass)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": ["left_shift", "right_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": ["left_shift"],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": { "mandatory": ["shift", "option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_forward",
-                                        "modifiers": ["left_option"],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Command-Shift-Delete to Ctrl-K (deletes rest of line, use both shift keys to bypass)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": {
-                                        "mandatory": ["left_shift", "right_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": ["left_shift"],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "delete_or_backspace",
-                                    "modifiers": { "mandatory": ["shift", "command"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "n",
-                                        "modifiers": ["left_control"],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap keys to use Gallium-CMDqwerty keyboard layout only on ABC input",
+                        "description": "RightCommand + Spacebar (QwertyMode)",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     }
@@ -1961,7 +1830,7 @@
                                 "to": [
                                     {
                                         "set_variable": {
-                                            "name": "qwerty_sublayer",
+                                            "name": "QwertyModeVar",
                                             "value": 1
                                         }
                                     }
@@ -1971,7 +1840,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 1
                                     }
@@ -1983,17 +1852,22 @@
                                 "to": [
                                     {
                                         "set_variable": {
-                                            "name": "qwerty_sublayer",
+                                            "name": "QwertyModeVar",
                                             "value": 0
                                         }
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "GalliumV2pk-CMDqwerty (OnlyWhen ABCinput&NonQwertyMode)",
+                        "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2009,7 +1883,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2025,7 +1899,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2041,7 +1915,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2057,7 +1931,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2073,7 +1947,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2089,7 +1963,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2105,7 +1979,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2121,7 +1995,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2137,7 +2011,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2153,7 +2027,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2169,7 +2043,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2185,7 +2059,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2201,7 +2075,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2217,7 +2091,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2233,7 +2107,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2249,7 +2123,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2265,7 +2139,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2281,7 +2155,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2297,7 +2171,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2313,7 +2187,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2329,7 +2203,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2345,7 +2219,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2361,7 +2235,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2382,7 +2256,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2403,7 +2277,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2419,7 +2293,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2435,7 +2309,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2451,7 +2325,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2467,7 +2341,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2483,7 +2357,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2499,7 +2373,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2515,7 +2389,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2531,7 +2405,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2547,7 +2421,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2563,7 +2437,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2579,7 +2453,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2595,7 +2469,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2611,7 +2485,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2627,7 +2501,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2643,7 +2517,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2659,7 +2533,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2675,7 +2549,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2691,7 +2565,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2707,7 +2581,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2723,7 +2597,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2744,7 +2618,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2760,7 +2634,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2784,7 +2658,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2808,7 +2682,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2832,7 +2706,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2856,7 +2730,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2880,7 +2754,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2904,7 +2778,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2928,7 +2802,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2952,7 +2826,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -2976,7 +2850,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3000,7 +2874,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3024,7 +2898,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3048,7 +2922,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3072,7 +2946,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3096,7 +2970,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3120,7 +2994,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3144,7 +3018,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3168,7 +3042,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3192,7 +3066,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3216,7 +3090,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3240,7 +3114,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3264,7 +3138,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3288,7 +3162,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3312,7 +3186,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3336,7 +3210,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3360,7 +3234,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3384,7 +3258,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3408,7 +3282,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3432,7 +3306,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3456,7 +3330,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3480,7 +3354,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3504,7 +3378,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3528,7 +3402,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3552,7 +3426,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3576,7 +3450,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3600,7 +3474,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3624,7 +3498,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3643,7 +3517,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3667,7 +3541,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3691,7 +3565,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3715,7 +3589,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3739,7 +3613,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3763,7 +3637,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3787,7 +3661,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3811,7 +3685,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3835,7 +3709,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3859,7 +3733,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3883,7 +3757,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3907,7 +3781,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3931,7 +3805,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3955,7 +3829,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -3979,7 +3853,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4003,7 +3877,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4027,7 +3901,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4051,7 +3925,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4075,7 +3949,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4099,7 +3973,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4123,7 +3997,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4147,7 +4021,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4171,7 +4045,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4195,7 +4069,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4219,7 +4093,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4243,7 +4117,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4267,7 +4141,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4291,7 +4165,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4315,7 +4189,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4339,7 +4213,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4363,7 +4237,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4387,7 +4261,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4411,7 +4285,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4435,7 +4309,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4459,7 +4333,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4483,7 +4357,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4507,7 +4381,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4531,7 +4405,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4555,7 +4429,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4579,7 +4453,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4603,7 +4477,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4627,7 +4501,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4651,7 +4525,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4675,7 +4549,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4699,7 +4573,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4723,7 +4597,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4747,7 +4621,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4766,7 +4640,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4790,7 +4664,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4814,7 +4688,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4838,7 +4712,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4862,7 +4736,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4886,7 +4760,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4910,7 +4784,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4934,7 +4808,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4958,7 +4832,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
@@ -4982,7 +4856,7 @@
                             {
                                 "conditions": [
                                     {
-                                        "name": "qwerty_sublayer",
+                                        "name": "QwertyModeVar",
                                         "type": "variable_if",
                                         "value": 0
                                     },
