@@ -870,14 +870,6 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "c",
-                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
-                                },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://www.monkeytype.com/" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
                                     "key_code": "m",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
@@ -898,22 +890,6 @@
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
                                 "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://bitsearch.to/" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "u",
-                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
-                                },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://www.facebook.com" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "semicolon",
-                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
-                                },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://www.instagram.com" }],
                                 "type": "basic"
                             },
                             {
