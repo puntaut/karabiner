@@ -2840,10 +2840,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "1",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
+                                        "key_code": "open_bracket"
                                     }
                                 ],
                                 "type": "basic"
@@ -2869,10 +2866,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "slash",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
+                                        "key_code": "close_bracket"
                                     }
                                 ],
                                 "type": "basic"
@@ -3418,10 +3412,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "quote",
-                                        "modifiers": [
-                                            "shift"
-                                        ]
+                                        "key_code": "semicolon"
                                     }
                                 ],
                                 "type": "basic"
@@ -4226,7 +4217,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "2",
+                                        "key_code": "comma",
                                         "modifiers": [
                                             "shift"
                                         ]
@@ -4260,7 +4251,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "7",
+                                        "key_code": "open_bracket",
                                         "modifiers": [
                                             "shift"
                                         ]
@@ -4294,7 +4285,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "backslash",
+                                        "key_code": "close_bracket",
                                         "modifiers": [
                                             "shift"
                                         ]
@@ -4702,7 +4693,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "backslash"
+                                        "key_code": "slash",
+                                        "modifiers": [
+                                            "shift"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -4971,7 +4965,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "6",
+                                        "key_code": "quote",
                                         "modifiers": [
                                             "shift"
                                         ]
@@ -5005,7 +4999,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "4",
+                                        "key_code": "semicolon",
                                         "modifiers": [
                                             "shift"
                                         ]
@@ -5039,7 +5033,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "hyphen",
+                                        "key_code": "period",
                                         "modifiers": [
                                             "shift"
                                         ]
