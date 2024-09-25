@@ -8,51 +8,17 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "FnPressedMode",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "fn",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "FnPressedVar",
-                                            "value": 1
-                                        }
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "set_variable": {
-                                            "name": "FnPressedVar",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Fn + q/w/e/r (ChangeDisplayArrangement)",
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "ExternalDisplay(Left)-main",
                                 "from": {
-                                    "key_code": "q"
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -62,18 +28,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "LaptopDisplay(Left)-main",
                                 "from": {
                                     "key_code": "q",
                                     "modifiers": {
                                         "mandatory": [
+                                            "fn",
                                             "left_command"
                                         ]
                                     }
@@ -86,16 +46,14 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "ExternalDisplay(Right)-main",
                                 "from": {
-                                    "key_code": "w"
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -105,18 +63,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "LaptopDisplay(Right)-main",
                                 "from": {
                                     "key_code": "w",
                                     "modifiers": {
                                         "mandatory": [
+                                            "fn",
                                             "left_command"
                                         ]
                                     }
@@ -129,16 +81,14 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "ExternalDisplay(Up)-main",
                                 "from": {
-                                    "key_code": "e"
+                                    "key_code": "e",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -148,18 +98,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "MonitorDisplay(Down)-main",
                                 "from": {
                                     "key_code": "e",
                                     "modifiers": {
                                         "mandatory": [
+                                            "fn",
                                             "left_command"
                                         ]
                                     }
@@ -172,16 +116,14 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "ExternalDisplay(Mirror)-main",
                                 "from": {
-                                    "key_code": "r"
+                                    "key_code": "r",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -191,18 +133,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "description": "LaptopDisplay(Mirror)-main",
                                 "from": {
                                     "key_code": "r",
                                     "modifiers": {
                                         "mandatory": [
+                                            "fn",
                                             "left_command"
                                         ]
                                     }
@@ -220,17 +156,13 @@
                         "description": "Fn + u/i/o/p/[/,/./spacebar as MultiMediaKey",
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "u",
                                     "modifiers": {
-                                        "optional": [
+                                        "mandatory":[
+                                            "fn"
+                                        ],
+                                        "optional":[
                                             "any"
                                         ]
                                     }
@@ -243,17 +175,13 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "i",
                                     "modifiers": {
-                                        "optional": [
+                                        "mandatory":[
+                                            "fn"
+                                        ],
+                                        "optional":[
                                             "any"
                                         ]
                                     }
@@ -266,16 +194,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "m",
                                     "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -289,16 +213,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -312,16 +232,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
+                                        "mandatory":[
+                                            "fn"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -335,16 +251,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "spacebar",
                                     "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -358,16 +270,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "comma",
                                     "modifiers": {
+                                        "mandatory":[
+                                            "fn"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -381,16 +289,12 @@
                                 "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "name": "FnPressedVar",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "period",
                                     "modifiers": {
+                                        "mandatory":[
+                                            "fn"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -461,6 +365,26 @@
                     {
                         "description": "RightCommand + Letters (LaunchApplication)",
                         "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": [
+                                            "command",
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
                             {
                                 "from": {
                                     "key_code": "e",
