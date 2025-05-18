@@ -211,19 +211,6 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "h",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "h",
-                                        "modifiers": ["command", "option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
                                     "key_code": "c",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
@@ -232,7 +219,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "b",
+                                    "key_code": "k",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
                                 "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/calibre.app'" }],
@@ -315,7 +302,7 @@
                                     "key_code": "g",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
-                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Ableton Live 12 Suite.app'" }],
+                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Bitwig Studio.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -728,7 +715,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "h",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
@@ -768,7 +755,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "j",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
@@ -788,7 +775,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "semicolon",
+                                    "key_code": "l",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
