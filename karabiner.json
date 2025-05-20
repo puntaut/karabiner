@@ -219,14 +219,6 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "k",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/calibre.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
                                     "key_code": "e",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
