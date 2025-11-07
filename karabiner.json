@@ -16,7 +16,7 @@
                                     "key_code": "q",
                                     "modifiers": { "mandatory": ["fn"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(1920,180) degree:0'" }],
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(1920,180) degree:0'" }],
                                 "type": "basic"
                             },
                             {
@@ -25,7 +25,7 @@
                                     "key_code": "q",
                                     "modifiers": { "mandatory": ["fn", "left_command"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(1440,-180) degree:0'" }],
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(1440,-180) degree:0'" }],
                                 "type": "basic"
                             },
                             {
@@ -34,7 +34,7 @@
                                     "key_code": "w",
                                     "modifiers": { "mandatory": ["fn"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(-1440,180) degree:0'" }],
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(-1440,180) degree:0'" }],
                                 "type": "basic"
                             },
                             {
@@ -43,7 +43,7 @@
                                     "key_code": "w",
                                     "modifiers": { "mandatory": ["fn", "left_command"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer  'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-1920,-180) degree:0'" }],
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-1920,-180) degree:0'" }],
                                 "type": "basic"
                             },
                             {
@@ -52,7 +52,7 @@
                                     "key_code": "e",
                                     "modifiers": { "mandatory": ["fn"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(244,1080) degree:0'" }],
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(240,1080) degree:0'" }],
                                 "type": "basic"
                             },
                             {
@@ -61,7 +61,7 @@
                                     "key_code": "e",
                                     "modifiers": { "mandatory": ["fn", "left_command"] }
                                 },
-                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:17A298E7-A980-4409-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-244,-1080) degree:0'" }],
+                                "to": [{ "shell_command": "/opt/homerbrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-240,-1080) degree:0'" }],
                                 "type": "basic"
                             },
                             {
