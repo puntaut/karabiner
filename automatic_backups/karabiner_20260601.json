@@ -1,0 +1,968 @@
+{
+    "global": {
+        "enable_notification_window": false,
+        "show_in_menu_bar": false
+    },
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Fn + q/w/e/r (ChangeDisplayArrangement)",
+                        "manipulators": [
+                            {
+                                "description": "ExternalDisplay(Left)-main",
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(1920,180) degree:0'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "LaptopDisplay(Left)-main",
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": { "mandatory": ["fn", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(1440,-180) degree:0'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "ExternalDisplay(Right)-main",
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(-1440,180) degree:0'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "LaptopDisplay(Right)-main",
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["fn", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-1920,-180) degree:0'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "ExternalDisplay(Up)-main",
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0' 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(240,1080) degree:0'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "MonitorDisplay(Down)-main",
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["fn", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homerbrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0' 'id:27C15195-B4B7-6B05-0857-D6964E3302DB res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-240,-1080) degree:0'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "ExternalDisplay(Mirror)-main",
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": { "mandatory": ["fn"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:27C15195-B4B7-6B05-0857-D6964E3302DB+37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(0,0) degree:0'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "LaptopDisplay(Mirror)-main",
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": { "mandatory": ["fn", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/displayplacer 'id:37D8832A-2D66-02CA-B9F7-8F30A301B230+27C15195-B4B7-6B05-0857-D6964E3302DB res:1440x900 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0'" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fn + u/i/o/p/[/,/./spacebar as MultiMediaKey",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "consumer_key_code": "display_brightness_decrement" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "i",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "consumer_key_code": "display_brightness_increment" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "consumer_key_code": "mute" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "consumer_key_code": "volume_decrement" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "consumer_key_code": "volume_increment" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "consumer_key_code": "play_or_pause" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "consumer_key_code": "rewind" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "period",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "consumer_key_code": "fast_forward" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "RightCommand + 0,-,= (ChangeWifiConnections)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "0",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "/usr/sbin/networksetup -setairportnetwork en0 roongsak xaeedpuntpont" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "hyphen",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "/usr/sbin/networksetup -setairportnetwork en0 roongsak_5G xaeedpuntpont" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "equal_sign",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "/usr/sbin/networksetup -setairportnetwork en0 puntaut_5G xaeedpuntpont" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "RightCommand + Letters (LaunchApplication)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "c",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Discord.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "o",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Obsidian.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Visual Studio Code.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Brave Browser.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open '/System/Applications/Preview.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open /System/Library/CoreServices/Finder.app" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open /System/Applications/Music.app" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open '/System/Applications/System Settings.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open /System/Volumes/Data/Applications/UTM.app" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open /System/Volumes/Data/Applications/LINE.app" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "z",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open /System/Volumes/Data/Applications/Rectangle.app" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open -b com.riotgames.RiotGames.RiotClient && open '/Applications/League of Legends.app/Contents/LoL/LeagueClient.app/'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            { "vendor_id": 1046 },
+                                            { "vendor_id": 29554 }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open -b com.riotgames.RiotGames.RiotClient && open '/Applications/League of Legends.app/Contents/LoL/LeagueClient.app/'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open '/Applications/League of Legends.app/Contents/LoL/League Of Legends.app/'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open '/Applications/League of Legends.app/Contents/LoL/Game/LeagueofLegends.app/'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' 'https://hub.atk.pro/'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "y",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' 'https://www.youtube.com/'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' 'https://www.onlinepianist.com/virtual-piano'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://libgen.is/" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://annas-archive.org/" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://www.amazon.com/sendtokindle" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://mail.google.com/" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "g",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://github.com/puntaut?tab=stars" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://www.mycourseville.com/" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
+                                },
+                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://drive.google.com/drive/u/0/my-drive" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open -a /System/Volumes/Data/Applications/kitty.app" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapslockPressedMode (Non-LeagueMode)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "CapslockPressedVar",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "CapslockPressedVar",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapslockPressedMode (LeagueMode)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": { "mandatory": ["left_command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["left_command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["left_command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "e",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": { "mandatory": ["left_command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "r",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "CapslockPressedVar",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "CapslockPressedVar",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "LeagueESC (Looting)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    },
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "description": "Looting Keyboard",
+                                                "product_id": 29554,
+                                                "vendor_id": 1046
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "escape"}],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.riotgames\\.LeagueofLegends\\.GameClient$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "CapslockPressedVar",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "CapslockPressedVar",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Aoae AdobeAcrobat",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "file_paths": ["/Applications/Adobe Acrobat DC/Adobe Acrobat.app"],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": { "key_code": "right_shift" },
+                                "to": [
+                                    {
+                                        "key_code": "t",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Capslock + Key (SymbolLayer)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "CapslockPressedVar",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "return_or_enter",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "CapslockPressedVar",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "CapslockPressedVar",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "CapslockPressedVar",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "CapslockPressedVar",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "CapslockPressedVar",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    },
+                                    {
+                                        "input_sources": [{ "input_source_id": "^com\\.apple\\.keylayout\\.ABC$" }],
+                                        "type": "input_source_if"
+                                    }
+                                ],
+                                "from": { "key_code": "spacebar" },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "repeat": true
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "devices": [
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 384,
+                        "vendor_id": 1241
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "left_command" },
+                            "to": [{ "key_code": "left_option" }]
+                        },
+                        {
+                            "from": { "key_code": "left_option" },
+                            "to": [{ "key_code": "left_command" }]
+                        },
+                        {
+                            "from": { "key_code": "menu" },
+                            "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
+                        },
+                        {
+                            "from": { "key_code": "right_command" },
+                            "to": [{ "key_code": "right_option" }]
+                        },
+                        {
+                            "from": { "key_code": "right_option" },
+                            "to": [{ "key_code": "right_command" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 615,
+                        "vendor_id": 76
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
+                            "to": [{ "key_code": "right_control" }]
+                        },
+                        {
+                            "from": { "key_code": "backslash" },
+                            "to": [{ "key_code": "return_or_enter" }]
+                        },
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
+                        },
+                        {
+                            "from": { "key_code": "international1" },
+                            "to": [{ "key_code": "right_shift" }]
+                        },
+                        {
+                            "from": { "key_code": "international3" },
+                            "to": [{ "key_code": "delete_or_backspace" }]
+                        },
+                        {
+                            "from": { "key_code": "japanese_eisuu" },
+                            "to": [{ "key_code": "left_command" }]
+                        },
+                        {
+                            "from": { "key_code": "japanese_kana" },
+                            "to": [{ "key_code": "right_command" }]
+                        },
+                        {
+                            "from": { "key_code": "left_command" },
+                            "to": [{ "key_code": "left_option" }]
+                        },
+                        {
+                            "from": { "key_code": "left_control" },
+                            "to": [{ "key_code": "caps_lock" }]
+                        },
+                        {
+                            "from": { "key_code": "left_option" },
+                            "to": [{ "key_code": "left_control" }]
+                        },
+                        {
+                            "from": { "key_code": "right_command" },
+                            "to": [{ "key_code": "right_option" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 615,
+                        "vendor_id": 1452
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
+                            "to": [{ "key_code": "right_control" }]
+                        },
+                        {
+                            "from": { "key_code": "backslash" },
+                            "to": [{ "key_code": "return_or_enter" }]
+                        },
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
+                        },
+                        {
+                            "from": { "key_code": "international1" },
+                            "to": [{ "key_code": "right_shift" }]
+                        },
+                        {
+                            "from": { "key_code": "international3" },
+                            "to": [{ "key_code": "delete_or_backspace" }]
+                        },
+                        {
+                            "from": { "key_code": "japanese_eisuu" },
+                            "to": [{ "key_code": "left_command" }]
+                        },
+                        {
+                            "from": { "key_code": "japanese_kana" },
+                            "to": [{ "key_code": "right_command" }]
+                        },
+                        {
+                            "from": { "key_code": "left_command" },
+                            "to": [{ "key_code": "left_option" }]
+                        },
+                        {
+                            "from": { "key_code": "left_control" },
+                            "to": [{ "key_code": "caps_lock" }]
+                        },
+                        {
+                            "from": { "key_code": "left_option" },
+                            "to": [{ "key_code": "left_control" }]
+                        },
+                        {
+                            "from": { "key_code": "right_command" },
+                            "to": [{ "key_code": "right_option" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 29554,
+                        "vendor_id": 1046
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "left_command" },
+                            "to": [{ "key_code": "left_option" }]
+                        },
+                        {
+                            "from": { "key_code": "left_option" },
+                            "to": [{ "key_code": "left_command" }]
+                        },
+                        {
+                            "from": { "key_code": "right_control" },
+                            "to": [{ "key_code": "right_option" }]
+                        },
+                        {
+                            "from": { "key_code": "right_option" },
+                            "to": [{ "key_code": "right_command" }]
+                        }
+                    ]
+                }
+            ],
+            "name": "plsnogarlic",
+            "selected": true,
+            "virtual_hid_keyboard": {
+                "indicate_sticky_modifier_keys_state": false,
+                "keyboard_type_v2": "ansi"
+            }
+        }
+    ]
+}

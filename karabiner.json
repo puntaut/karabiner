@@ -85,7 +85,7 @@
                         ]
                     },
                     {
-                        "description": "Fn + u/i/o/p/[/,/./spacebar as MultiMediaKey",
+                        "description": "Fn + u/i/j/k/m/,/./y/spacebar as MultiMediaKey",
                         "manipulators": [
                             {
                                 "from": {
@@ -155,6 +155,17 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "y",
+                                    "modifiers": {
+                                        "mandatory": ["fn"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "shell_command": "/opt/homebrew/bin/nightlight toggle" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "comma",
                                     "modifiers": {
                                         "mandatory": ["fn"],
@@ -201,7 +212,7 @@
                                     "key_code": "equal_sign",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
-                                "to": [{ "shell_command": "/usr/sbin/networksetup -setairportnetwork en0 puntaut_5G xaeedpuntpont" }],
+                                "to": [{ "shell_command": "/usr/sbin/networksetup -setairportnetwork en0 aunpont_5G xaeedpuntpont" }],
                                 "type": "basic"
                             }
                         ]
@@ -219,15 +230,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "o",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Obsidian.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "a",
+                                    "key_code": "e",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
                                 "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Visual Studio Code.app'" }],
@@ -275,7 +278,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "l",
+                                    "key_code": "v",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
                                 "to": [{ "shell_command": "open /System/Volumes/Data/Applications/LINE.app" }],
@@ -602,7 +605,7 @@
                                     "key_code": "grave_accent_and_tilde",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "escape"}],
+                                "to": [{ "key_code": "escape" }],
                                 "type": "basic"
                             },
                             {
@@ -632,27 +635,6 @@
                                             "name": "CapslockPressedVar",
                                             "value": 0
                                         }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Aoae AdobeAcrobat",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "file_paths": ["/Applications/Adobe Acrobat DC/Adobe Acrobat.app"],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": { "key_code": "right_shift" },
-                                "to": [
-                                    {
-                                        "key_code": "t",
-                                        "modifiers": ["command", "shift"]
                                     }
                                 ],
                                 "type": "basic"
