@@ -241,7 +241,7 @@
                                     "key_code": "f",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
-                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Brave Browser.app'" }],
+                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Helium.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -338,7 +338,7 @@
                                     "key_code": "t",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' 'https://hub.atk.pro/'" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' 'https://hub.atk.pro/'" }],
                                 "type": "basic"
                             },
                             {
@@ -346,7 +346,7 @@
                                     "key_code": "y",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' 'https://www.youtube.com/'" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' 'https://www.youtube.com/'" }],
                                 "type": "basic"
                             },
                             {
@@ -354,7 +354,7 @@
                                     "key_code": "p",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' 'https://www.onlinepianist.com/virtual-piano'" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' 'https://www.onlinepianist.com/virtual-piano'" }],
                                 "type": "basic"
                             },
                             {
@@ -362,7 +362,7 @@
                                     "key_code": "l",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://libgen.is/" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://libgen.is/" }],
                                 "type": "basic"
                             },
                             {
@@ -370,7 +370,7 @@
                                     "key_code": "a",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://annas-archive.org/" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://annas-archive.org/" }],
                                 "type": "basic"
                             },
                             {
@@ -378,7 +378,7 @@
                                     "key_code": "k",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://www.amazon.com/sendtokindle" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://www.amazon.com/sendtokindle" }],
                                 "type": "basic"
                             },
                             {
@@ -386,7 +386,7 @@
                                     "key_code": "m",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://mail.google.com/" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://mail.google.com/" }],
                                 "type": "basic"
                             },
                             {
@@ -394,7 +394,7 @@
                                     "key_code": "g",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://github.com/puntaut?tab=stars" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://github.com/puntaut?tab=stars" }],
                                 "type": "basic"
                             },
                             {
@@ -402,7 +402,7 @@
                                     "key_code": "s",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://www.mycourseville.com/" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://www.mycourseville.com/" }],
                                 "type": "basic"
                             },
                             {
@@ -410,7 +410,7 @@
                                     "key_code": "d",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Brave Browser.app' https://drive.google.com/drive/u/0/my-drive" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://drive.google.com/drive/u/0/my-drive" }],
                                 "type": "basic"
                             },
                             {
