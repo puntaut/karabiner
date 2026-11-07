@@ -238,10 +238,10 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "f",
+                                    "key_code": "a",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
-                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Helium.app'" }],
+                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Antigravity.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -250,6 +250,22 @@
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
                                 "to": [{ "shell_command": "open '/System/Applications/Preview.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open -a /System/Volumes/Data/Applications/kitty.app" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "shell_command": "open '/System/Volumes/Data/Applications/Helium.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -278,7 +294,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "x",
+                                    "key_code": "l",
                                     "modifiers": { "mandatory": ["right_command"] }
                                 },
                                 "to": [{ "shell_command": "open /System/Volumes/Data/Applications/LINE.app" }],
@@ -351,34 +367,10 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "p",
+                                    "key_code": "c",
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' 'https://www.onlinepianist.com/virtual-piano'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
-                                },
-                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://libgen.is/" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
-                                },
-                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://annas-archive.org/" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": { "mandatory": ["right_command", "right_option"] }
-                                },
-                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://www.amazon.com/sendtokindle" }],
+                                "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://discord.com/channels/@me" }],
                                 "type": "basic"
                             },
                             {
@@ -411,14 +403,6 @@
                                     "modifiers": { "mandatory": ["right_command", "right_option"] }
                                 },
                                 "to": [{ "shell_command": "open -a '/System/Volumes/Data/Applications/Helium.app' https://drive.google.com/drive/u/0/my-drive" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": { "mandatory": ["right_command"] }
-                                },
-                                "to": [{ "shell_command": "open -a /System/Volumes/Data/Applications/kitty.app" }],
                                 "type": "basic"
                             }
                         ]
